@@ -10,3 +10,5 @@ target/
 # 本地生成物，不要提交
 二维码.png
 公网地址.txt
+
+deploy/coach-deploy.tar.gz

@@ -16,7 +16,7 @@ $env:SPRING_DATASOURCE_PASSWORD = '123456'
 
 # ---------- 访问口令 ----------
 # 设了之后，别人打开地址要先输这串口令才能进；留空则完全不设防（只适合本机自用）
-if (-not $env:ACCESS_PASSWORD) { $env:ACCESS_PASSWORD = 'coach2026' }
+if (-not $env:ACCESS_PASSWORD) { $env:ACCESS_PASSWORD = 'ljt666' }
 
 # ---------- DeepSeek ----------
 # key 优先用已有环境变量；没有就从本机凭据文件里取，避免明文写进仓库
