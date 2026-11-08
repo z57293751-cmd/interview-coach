@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复盘 · AI 面试小站</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f6df6">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="面试小站">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-page="review">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="question.html">AI 面试小站</a>
+      <nav>
+        <a href="question.html">题库</a>
+        <a href="mock.html">模拟面试</a>
+        <a class="active"  href="review.html">复盘</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="review-head">
+      <h2>复盘本</h2>
+      <p id="counts" class="dim"></p>
+    </div>
+    <div id="tabs" class="tabs">
+      <button class="tab active" data-mastered="0">待复习</button>
+      <button class="tab" data-mastered="1">已掌握</button>
+    </div>
+    <div id="list" class="list"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

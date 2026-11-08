@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>答题 · AI 面试小站</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f6df6">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="面试小站">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-page="answer">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="question.html">AI 面试小站</a>
+      <nav>
+        <a href="question.html">题库</a>
+        <a href="mock.html">模拟面试</a>
+        <a href="review.html">复盘</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <div id="questionCard"></div>
+
+    <div class="answer-box">
+      <div class="answer-head">
+        <span>我的回答</span>
+        <span id="count">0 字</span>
+      </div>
+      <textarea id="answer" rows="10" placeholder="先自己想，再写下来。建议 80 字以上，答完再看参考答案。"></textarea>
+      <div class="actions">
+        <button id="skip" class="ghost">跳过</button>
+        <button id="submit">交卷</button>
+      </div>
+    </div>
+
+    <div id="result"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

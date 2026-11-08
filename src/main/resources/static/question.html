@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>题库 · AI 面试小站</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f6df6">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="面试小站">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body data-page="question">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="question.html">AI 面试小站</a>
+      <nav>
+        <a class="active" href="question.html">题库</a>
+        <a href="mock.html">模拟面试</a>
+        <a href="review.html">复盘</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-row">
+      <input id="keyword" type="search" placeholder="搜索题目或答案关键词…">
+      <button id="searchBtn">搜索</button>
+    </div>
+    <div id="tabs" class="tabs">
+      <button class="tab active" data-category="">全部</button>
+      <button class="tab" data-category="Java 基础">Java 基础</button>
+      <button class="tab" data-category="数据库">数据库</button>
+      <button class="tab" data-category="框架">框架</button>
+      <button class="tab" data-category="项目">项目</button>
+    </div>
+    <div id="list" class="list"></div>
+    <div id="empty" class="empty hidden">没搜到，换个词试试</div>
+    <div class="pager">
+      <button id="prev">上一页</button>
+      <span id="pageInfo"></span>
+      <button id="next">下一页</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
